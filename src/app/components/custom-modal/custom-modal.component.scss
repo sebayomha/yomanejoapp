@@ -1,0 +1,71 @@
+.height-290 {
+    height:290px !important;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #43c89d;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.closeCross {
+    color: white;
+    opacity: 1;
+}
+
+.confirmCustomModal {
+    margin: auto; 
+    border-radius: 20px;
+}
+
+.confirmSchedule {
+    background-color: #43c89d; 
+    border-color: #43c89d;
+}
+
+.cancelSchedule {
+    background-color: #ef2b2b; 
+    border-color: #ef2b2b;
+}
+
+.max-width-500 {
+    max-width: 500px !important;
+}
+
+.margin-left-10-porc {
+    margin-left: 10%;
+}
+
+.height-185 {
+    height:185px !important;
+}
+
+@media (max-width: 991px) {
+    .margin-left-10-porc {
+      margin-left: 20%;
+    }
+}
+
+@media (max-width: 756px) {
+    .height-185 {
+        height:290px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .margin-left-10-porc {
+      margin-left: 15%;
+    }
+}
+
+@media (max-width: 400px) {
+    .margin-left-10-porc {
+      margin-left: 10%;
+    }
+}
+
+::ng-deep #carsBody .cdk-global-overlay-wrapper, ::ng-deep #carsBody .cdk-overlay-container {
+    z-index: 99999 !important;
+ }

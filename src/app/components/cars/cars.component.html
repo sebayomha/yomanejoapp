@@ -1,0 +1,51 @@
+<div class="container" style="margin-top: 95px;">
+  <div class="row">
+    <div class="col-12">
+      <button mat-button class="confirmButton" (click)="operacionesAuto(agregar, 'auto');">AGREGAR<span style="font-size: 20px; margin-left: 10px;"><i class="fas fa-car"></i></span></button>
+    </div>
+    <div class="col-sm-12 col-md-6 col-xl-4" *ngFor="let auto of autos" style="margin-top:15px">
+      <mat-card class="padding-20">
+        <div class="row">
+          <div class="col-2">
+            <span class="dot">
+              <p style="margin: 1px; color: white; margin-left: 8px;">{{auto.idAuto}}</p>
+            </span>
+          </div>
+          <div class="col-6" style="padding:0px;">
+            <span style="margin-top:13px;">{{auto.modelo}}</span>
+          </div>
+          <div class="col-4">
+            <!-- <span class="icons" style="font-size: 18px; color: #d61c1c; float:right;" (click)="operacionesAuto(bajar,auto);" matTooltip="Dar de baja">
+              <i class="fas fa-trash-alt"></i>
+            </span>
+            <span class="icons" style="color: grey; font-size: 18px; float:right; margin-right: 15px;" (click)="operacionesAuto(modificar,auto);" matTooltip="Editar">
+              <i class="fas fa-pencil-alt"></i>
+            </span> -->
+
+            
+          </div>
+        </div>
+        <mat-card-content>
+          <div class="row" style="margin-top: 15px;">
+            <div class="col-6">
+              Patente: {{auto.patente}}
+            </div>
+            <div class="col-6">
+              Zona: {{auto.zonaMaster}}
+            </div>
+          </div>
+          <div class="row" style="margin-top: 15px;">
+            <div class="col-6">
+              Clases para hoy: {{auto.cantidadDeClasesDia}}
+            </div>
+            <!-- <div class="col-6">
+              Zona: {{auto.zonaMaster}}
+            </div> -->
+          </div>
+        </mat-card-content>
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<custom-modal #customModal (close)="onCustomModalClose($event);" (confirmation)="confirmModal($event);" [data]="dataToConfirm" [component]="'cars'" [successBanner]="showSuccessBanner" [operation]="operation"></custom-modal>
