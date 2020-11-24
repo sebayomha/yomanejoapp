@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; overflow-x:hidden; font-family: 'Roboto', sans-serif; }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.mat-ink-bar {
+    background-color:#43c89d !important;  
+}
+
+.mat-card-header .mat-card-title {
+    font-size: 14px !important;
+}
+
+.tooltipFontSize {
+    font-size: 14px !important;
+    max-width: unset !important;
+}
+
+.mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #43c89d !important;
+}
+
+.mat-form-field.mat-focused:not(.ng-invalid) .mat-form-field-ripple {
+    background-color: #43c89d !important;
+}
+
+.mat-form-field.mat-focused.ng-untouched .mat-form-field-ripple {
+    background-color: #43c89d !important;
+}
+
+.showDesktop {
+    display: block;
+}
+
+.showOnlyMobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .showMobile {
+      display: none;
+    }
+    
+    .showDesktop {
+        display: none;
+    }
+
+    .showOnlyMobile {
+        display: block;
+    }
+}
