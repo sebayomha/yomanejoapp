@@ -1,0 +1,64 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.addToHomeScreenToolbar {
+    background: #323232 !important;
+    position: fixed;
+    bottom: 0px;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    color: #439f82;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    min-height: 34px;
+}
+
+.notificationsToolbar {
+    background: #323232 !important;
+    position: fixed;
+    top: 0px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 80px;
+    color: #439f82;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    min-height: 34px;
+    z-index: 99999999;
+}
+
+.addToHomeScreenToolbar mat-toolbar-row, .notificationsToolbar mat-toolbar-row {
+    height: 34px;
+}
+
+.addToHomeScreenButton {
+    background-color: #439f82 !important;
+    color: white !important;
+}
+
+.masTardeButton {
+    margin-right: 10px;
+}
+
+@media (max-width: 968px) {
+    .addToHomeScreenToolbar {
+        width: 92%;
+        margin-left: 4%;
+        min-height: 64px;
+    }
+
+    .notificationsToolbar {
+        width: 92%;
+        margin-left: 4%;
+        min-height: 64px;
+    }
+
+    .addToHomeScreenToolbar mat-toolbar-row, .notificationsToolbar mat-toolbar-row {
+        height: 64px;
+        white-space: normal;
+    }
+}
